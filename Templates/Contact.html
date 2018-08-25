@@ -1,0 +1,50 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'animate.css' %}">
+<style>
+    .bg {
+        background-size: cover;
+        background-image: url("{% static 'images/img.jpg' %}");
+    }
+</style>
+{% endblock %}
+{% block container %}
+
+<div class="container">
+
+
+    <div class="row">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-header">Add Musician</div>
+                <div class="card-body">
+                    <form method="post">
+                        {% csrf_token %}
+                        {{mu_form|crispy}}
+                        <button>Add Musician</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-header">Add Superheroes</div>
+                <div class="card-body">
+                    <form method="post">
+                        {% csrf_token %}
+                        {{super_form|crispy}}
+                        <button>Add Superheroes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}]

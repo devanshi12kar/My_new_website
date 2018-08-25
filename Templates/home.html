@@ -1,0 +1,122 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block container %}
+    <!-- banner -->
+    <div class="banner" id="home">
+        <!-- header -->
+        <header>
+            {% include 'includes/nav.html' %}
+        </header>
+        <!-- //header -->
+        <div class="container">
+            <!-- banner-text -->
+            <div class="banner-text">
+                <div class="slider-info">
+                    <h3>connect digital content with the real world</h3>
+                    <a class="btn btn-primary mt-lg-5 mt-3 agile-link-bnr scroll" href="#register" role="button">View
+                        More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- register -->
+    {% include 'includes/register.html' %}
+    <!-- //register -->
+    <!-- services -->
+    {% include 'includes/service.html' %}
+    <!-- //services -->
+    <!-- //container -->
+    <!-- //banner -->
+    <!-- process -->
+    <section class="wthree-row py-lg-5" id="process">
+        <div class="container py-5">
+            <div class="title-wthree text-center py-lg-5">
+                <h3 class="agile-title">
+                    creative digital lab
+                </h3>
+                <span></span>
+            </div>
+            <div class="row abbot-main py-lg-5 py-4 mb-sm-5">
+                <div class="col-lg-4 abbot-right">
+                    <img src="{% static 'images/p1.png' %}" class="img-fluid rounded-circle" alt=""/>
+                </div>
+                <div class="offset-lg-2"></div>
+                <div class="col-lg-6 about-text-grid position-relative mt-lg-0 mt-5">
+                    <div class="d-flex">
+                        <span class="process-circle"></span>
+                        <h4 class="sec-title1">Query or Problem ?</h4>
+                    </div>
+                    <p class="mt-md-5 mb-3 mt-3">Donec mi nulla, auctor nec sem a, ornare auctor m faucibus orci luctus
+                        et
+                        ultrices posuere cubilia Curai.
+                        Sed mi tortor, commodo a felis in, fringilla tincidunt nulla. </p>
+                    <p>fringilla tincidunt nulla onec mi nulla, auctor nec sem a, ornare auctor m faucibus orci luctus
+                        et
+                        ultrices
+                        posuere cubilia Curai. Sed mi tortor, commodo a felis in. </p>
+                    <div class="process-direction"></div>
+                </div>
+            </div>
+            <div class="row abbot-main py-lg-5 py-4 my-md-5">
+                <div class="col-lg-6 about-text-grid">
+                    <div class="d-flex">
+                        <h4 class="sec-title1 flow-odd">idea & foundation</h4>
+                        <span class="process-circle"></span>
+                    </div>
+                    <ul class="list-group mt-md-3 my-3">
+                        <li class="list-group-item border-0">
+                            <i class="fas fa-check mr-3 mt-lg-0 mt-3"></i>Cras justo odio
+                        </li>
+                        <li class="list-group-item border-0">
+                            <i class="fas fa-check mr-3 mt-lg-0 mt-3"></i>Dapibus ac facilisis in
+                        </li>
+                        <li class="list-group-item border-0">
+                            <i class="fas fa-check mr-3 mt-lg-0 mt-3"></i>Morbi leo risus
+                        </li>
+                        <li class="list-group-item border-0">
+                            <i class="fas fa-check mr-3 mt-lg-0 mt-3"></i>Porta ac consectetur ac
+                        </li>
+                        <li class="list-group-item border-0">
+                            <i class="fas fa-check mr-3 mt-lg-0 mt-3"></i>Vestibulum at eros
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 abbot-right">
+                    <img src="{% static 'images/p2.png' %}" class="img-fluid rounded-circle" alt=""/>
+                </div>
+            </div>
+            <div class="row abbot-main py-lg-5 py-4 mb-sm-5">
+                <div class="col-lg-4 abbot-right">
+                    <img src="{% static 'images/p3.png' %}" class="img-fluid rounded-circle" alt=""/>
+                </div>
+                <div class="offset-lg-2"></div>
+                <div class="col-lg-6 about-text-grid position-relative  mt-lg-0 mt-5">
+                    <div class="d-flex">
+                        <span class="process-circle"></span>
+                        <h4 class="sec-title1">technology</h4>
+                    </div>
+                    <p class="mt-md-5 mb-3 mt-3">Fringilla tincidunt nulla onec mi nulla, auctor nec sem a, ornare
+                        auctor m
+                        faucibus orci luctus et ultrices
+                        posuere cubilia Curai. Sed mi tortor, commodo a felis in. </p>
+                    <p>Donec mi nulla, auctor nec sem a, ornare auctor m faucibus orci luctus et ultrices posuere
+                        cubilia
+                        Curai.
+                        Sed mi tortor, commodo a felis in, fringilla tincidunt nulla. </p>
+                    <div class="process-direction2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //process -->
+    <!--partners  -->
+    {% include 'includes/patners.html' %}
+    <!-- //partners -->
+    <!-- contact -->
+    {% include 'includes/contact.html' %}
+    <!-- //contact -->
+
+
+
+{% endblock %}
